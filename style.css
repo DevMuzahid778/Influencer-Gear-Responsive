@@ -36,6 +36,7 @@ ul li{
     width: 50%;
 }
 .main-camera{
+    width: 40%;
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
 }
@@ -123,4 +124,36 @@ footer .social-icons a{
     border-radius: 20px;
     padding: 6px;
     margin: 7px;
+}
+
+/* make website responsive with mediaQuery */
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    .firstpart{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .Products{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .halfwidth{
+        margin-bottom: 20px;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    
+    .firstpart{
+        display: flex;
+        flex-direction: column;
+    }
+    .Products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .halfwidth{
+        margin-bottom: 20px;
+    }
 }
